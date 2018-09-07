@@ -1,0 +1,34 @@
+.education-page{
+	background: white;
+	&__logo{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	&__image{
+		display: block;
+		background-size: contain;
+		width: 60%;
+	}
+	&__options-list{
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		@media screen and (max-width:50rem){
+			flex-direction: column;
+		}
+	}
+	&__option{
+		padding: 1em;
+		font-size: 2rem;
+		// color: brown;
+		width: 50%;
+		text-align: center;
+		&--full-width{
+			width: 100%;
+		}
+		@media screen and (max-width:50rem){
+			width: 100%;
+		}
+	}
+}

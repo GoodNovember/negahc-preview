@@ -1,0 +1,20 @@
+@import "../colors";
+
+.button-link{
+	flex-shrink: 0;
+	white-space: nowrap;
+	display: inline-block;
+	&--theme-regular{
+		padding: 1rem 1.5rem;
+		border-radius: 3rem;
+		// border: .15rem solid;
+		color: black;
+		background: $EmphasisLinkColor;
+		&:hover{
+			background: $EmphasisLinkHoverColor;
+		}
+		&:active{
+			background: $EmphasisLinkActiveColor;
+		}
+	}
+}

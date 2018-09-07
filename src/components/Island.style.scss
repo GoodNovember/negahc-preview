@@ -1,0 +1,86 @@
+@import "../colors";
+
+.island {
+	display: flex;
+	padding:0;
+	margin:0;
+	min-height: 75vh;
+	height: 100%;
+	justify-content: center;
+
+	&--position-center{
+		.island__background{
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	&__logo{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		img{
+			margin: 1rem;
+			width: 40%;
+			display: block;
+		}
+	}
+
+	&__title{
+		padding-top: 1rem;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	&__background{
+		align-items: center;
+		display: flex;
+		padding: 3rem;
+	}
+
+	&__caption{
+		padding: 0 1rem;
+		color: rgba(255,255,255,.85);
+		font-size: 1.1rem;
+		background: $MainColorDark;
+		max-width: 50rem;
+
+		.link{
+			color: $EmphasisLinkColor;
+			&:hover{
+				color:$EmphasisLinkHoverColor;
+			}
+			&:active{
+				color:$EmphasisLinkActiveColor;
+			}
+		}
+
+		@media screen and (max-width:50rem){
+			width: 100%;
+		}
+		&--position-left{
+			justify-self: flex-start;
+			height: 100%;
+			width: 50%;
+			@media screen and (max-width:50rem){
+				width: 100%;
+			}
+		}
+		&--position-right{
+			justify-self: flex-end;
+			height: 100%;
+			width: 50%;
+			@media screen and (max-width:50rem){
+				width: 100%;
+			}
+		}
+		&--position-center{
+			width: 100%;
+			max-width: 50rem;
+			margin: 0 auto;
+		}
+	}
+
+}

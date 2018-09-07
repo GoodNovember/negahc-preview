@@ -1,0 +1,23 @@
+@import "../colors";
+.page{
+	display: flex;
+	flex-direction: column;
+	&__masthead{
+		min-height: 10rem;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	&__title{
+		font-size: 3rem;
+		font-weight: bolder;
+	}
+	&__subtitle{
+		padding-top: 1rem;
+		font-size: 2rem;
+		color: $AccentTextColor;
+	}
+}

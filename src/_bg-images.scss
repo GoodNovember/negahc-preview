@@ -1,0 +1,19 @@
+.child-bg{ // smiling redheaded child
+	background-image: url("../media/Family Day Harvest-0316.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top right;
+	@media screen and (max-width:50em){
+		background-position: top right;
+	}
+}
+
+.bg-children-hands{ // children raising hands
+	background-image: url("../media/_84A6718.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top right;
+	@media screen and (max-width:50em){
+		background-position: top right;
+	}
+}

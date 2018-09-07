@@ -1,0 +1,10 @@
+@import "./variables.scss";
+
+.app-root{
+	display: flex;
+	flex-direction: column;
+	&__scroll-box{
+		overflow: auto;
+	}
+	height: 100vh;
+}
