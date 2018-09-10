@@ -1,1 +1,1 @@
-export const PATH_PREFIX = '/negahc-preview/docs/'
+export const PATH_PREFIX = '/negahc-preview/'
