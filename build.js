@@ -12,7 +12,7 @@ const OPTIONS = {
 }
 
 const bundler = new Bundler(path.join(__dirname, '/src/index.html'), OPTIONS)
-
+console.log("Building using Parcel.js...")
 bundler.bundle().then(()=>{
 	console.log("BUNDLED!")
 })
