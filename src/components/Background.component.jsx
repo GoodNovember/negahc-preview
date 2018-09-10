@@ -25,7 +25,7 @@ export class Background extends Component{
 		}
 
 		if(hasImageSrc){ 
-			styleOutput.backgroundImage = `url("../${src}")`
+			styleOutput.backgroundImage = `url("${src}")`
 		}
 
 		return <BEM className={className} style={styleOutput} block={'background'} modifier={{['has-image']:(hasImageSrc)}}>{children}</BEM>
