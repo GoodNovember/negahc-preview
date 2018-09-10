@@ -2,9 +2,13 @@ import createHistory from "history/createBrowserHistory"
 
 import { combineReducers } from "redux"
 
-export const history = createHistory()
+import { PATH_PREFIX } from "../pathPrefix.js"
 
-const INITIAL_PATHNAME = '/'
+export const history = createHistory({
+	basename:PATH_PREFIX
+})
+
+const INITIAL_PATHNAME = PATH_PREFIX || '/'
 
 const pathnameReducer = (state=INITIAL_PATHNAME,action) => {
 	const {type, payload} = action

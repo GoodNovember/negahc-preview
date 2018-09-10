@@ -9,7 +9,10 @@ const PUBLIC_SERVER_FOLDER = './docs'
 
 const bundler = new Bundler(path.join(__dirname, '/src/index.html'), {
 	outDir:PUBLIC_SERVER_FOLDER,
-	publicUrl:'./'
+	// publicUrl:PUBLIC_SERVER_FOLDER,
+	watch:false,
+	hmr:false,
+	minify:true,
 })
 
 // use the media from the source:
