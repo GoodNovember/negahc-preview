@@ -11,7 +11,7 @@ const SERVER_OUTPUT_OPTIONS = {
 	watch:false,
 	minify:true,
 	hmr:false,
-	publicUrl:PUBLIC_SERVER_FOLDER,
+	// publicUrl:PUBLIC_SERVER_FOLDER,
 	outDir:PUBLIC_SERVER_FOLDER,
 }
 
