@@ -7,13 +7,21 @@ const PORT = 8080
 
 const PUBLIC_SERVER_FOLDER = './docs'
 
-const bundler = new Bundler(path.join(__dirname, '/src/index.html'), {
+const SERVER_OUTPUT_OPTIONS = {
+	watch:false,
+	minify:true,
+	hmr:false,
+	publicUrl:PUBLIC_SERVER_FOLDER,
 	outDir:PUBLIC_SERVER_FOLDER,
-	// publicUrl:PUBLIC_SERVER_FOLDER,
-	// watch:false,
-	// hmr:false,
-	// minify:true,
-})
+}
+
+const DEV_OUTPUT_OPTIONS = {
+	outDir:PUBLIC_SERVER_FOLDER,
+}
+
+const CHOSEN_OPTIONS = SERVER_OUTPUT_OPTIONS
+
+const bundler = new Bundler(path.join(__dirname, '/src/index.html'), CHOSEN_OPTIONS)
 
 // use the media from the source:
 // app.use('/media',express.static(path.join(__dirname,'/src/media')))
